@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Quest: The LLM Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Prompt Quest: The LLM Challenge</h1>
+            <p class="storyline">Embark on your journey to become a Master Prompt Engineer! Answer questions, level up, and conquer the Realms of Prompting.</p>
+        </header>
+
+        <div id="game-area">
+            <div id="progress-section">
+                <div id="score-area">Score: <span id="score">0</span></div>
+                <div id="level-area">Level: <span id="level">1</span> (<span id="level-title">Novice Prompter</span>)</div>
+                <div class="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+
+            <div id="ai-core-visualization">
+                <div class="ai-core-light"></div>
+                <p>AI Core Status: <span id="ai-status">Idle</span></p>
+            </div>
+
+            <div id="question-container">
+                <h2 id="question-text">Question will appear here...</h2>
+                <div id="options-container">
+                    <!-- Options will be dynamically inserted here -->
+                </div>
+            </div>
+
+            <div id="feedback-area">
+                <p id="feedback-text"></p>
+            </div>
+
+            <button id="next-question-btn" style="display:none;">Next Question</button>
+            <button id="restart-game-btn" style="display:none;">Play Again?</button>
+        </div>
+
+        <footer>
+            <p>Inspired by "Prompt Engineering" by Lee Boonstra et al.</p>
+        </footer>
+    </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
